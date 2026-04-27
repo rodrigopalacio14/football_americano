@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario | CFA</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge-cfa">Temporada CFA</span>
+        <h1>Calendario</h1>
+        <p>Fixture, sedes, horarios y resultados de los torneos oficiales de CFA.</p>
+      </div>
+    </section>
+
+    <section class="section-light">
+      <div class="container">
+
+        <div class="calendar-venue mb-5">
+          <h3>Sede oficial</h3>
+          <p>
+            Todos los partidos se disputan en el Predio Juan Carlos Irazusta,
+            ubicado en Bernardo O'Higgins 6085, zona sur de Córdoba.
+          </p>
+          <div class="venue-times">
+            <span>Flag Football: 13:00 a 15:00 hs</span>
+            <span>Equipados: desde 16:00 hs</span>
+          </div>
+        </div>
+
+        <div class="accordion accordion-cfa" id="accordionCalendario">
+
+          <!-- EQUIPADOS -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#equipados">
+                Football Americano - Equipados
+              </button>
+            </h2>
+
+            <div id="equipados" class="accordion-collapse collapse" data-bs-parent="#accordionCalendario">
+              <div class="accordion-body">
+                <div class="calendar-header">
+                  <div>
+                    <span>Football Americano</span>
+                    <h3>Equipados</h3>
+                  </div>
+                  <p><img src="../img/equipos/centauros.PNG" alt="Centauros"> Centauros · <img src="../img/equipos/coyotes.PNG" alt="Coyotes"> Coyotes · <img src="../img/equipos/dragones.PNG" alt="Dragones"> Dragones · <img src="../img/equipos/condores.PNG" alt="Cóndores"> Cóndores</p>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table table-cfa align-middle">
+                    <thead>
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Encuentro</th>
+                        <th>Instancia</th>
+                        <th>Sede</th>
+                        <th>Horario</th>
+                        <th>Resultado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                            <tr><td>11/04</td><td><span class="team-fixture">Centauros</span> vs <span class="team-fixture">Cóndores</span></td><td>PRE</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>18/04</td><td><span class="team-fixture">Dragones</span> vs <span class="team-fixture">Coyotes</span></td><td>PRE</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>25/04</td><td><span class="team-fixture">Coyotes</span> vs <span class="team-fixture">Centauros</span></td><td>Fecha 1</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>02/05</td><td>Descanso</td><td>Día del Trabajador</td><td>-</td><td>-</td><td>-</td></tr>
+                            <tr><td>09/05</td><td><span class="team-fixture">Cóndores</span> vs <span class="team-fixture">Dragones</span></td><td>Fecha 2</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>16/05</td><td><span class="team-fixture">Coyotes</span> vs <span class="team-fixture">Dragones</span></td><td>Fecha 3</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>23/05</td><td>Sin actividad</td><td>Finde Revolución de Mayo</td><td>-</td><td>-</td><td>-</td></tr>
+                            <tr><td>30/05</td><td><span class="team-fixture">Cóndores</span> vs <span class="team-fixture">Centauros</span></td><td>Fecha 4</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>06/06</td><td><span class="team-fixture">Cóndores</span> vs <span class="team-fixture">Coyotes</span></td><td>Fecha 5</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>27/06</td><td><span class="team-fixture">Dragones</span> vs <span class="team-fixture">Centauros</span></td><td>Fecha 6</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>04/07</td><td><span class="team-fixture">Coyotes</span> vs <span class="team-fixture">Centauros</span></td><td>Fecha 7</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>05/07 al 24/07</td><td>Receso</td><td>Receso de invierno</td><td>-</td><td>-</td><td>-</td></tr>
+                            <tr><td>25/07</td><td><span class="team-fixture">Cóndores</span> vs <span class="team-fixture">Dragones</span></td><td>Fecha 8</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>01/08</td><td><span class="team-fixture">Centauros</span> vs <span class="team-fixture">Coyotes</span></td><td>Fecha 9</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>08/08</td><td><span class="team-fixture">Dragones</span> vs <span class="team-fixture">Cóndores</span></td><td>Fecha 10</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>14/08 al 16/08</td><td>Sin actividad</td><td>Finde largo San Martín</td><td>-</td><td>-</td><td>-</td></tr>
+                            <tr><td>22/08</td><td><span class="team-fixture">Dragones</span> vs <span class="team-fixture">Coyotes</span></td><td>Fecha 11</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>29/08</td><td><span class="team-fixture">Centauros</span> vs <span class="team-fixture">Cóndores</span></td><td>Fecha 12</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>05/09</td><td><span class="team-fixture">Coyotes</span> vs <span class="team-fixture">Cóndores</span></td><td>Fecha 13</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>12/09</td><td><span class="team-fixture">Centauros</span> vs <span class="team-fixture">Dragones</span></td><td>Fecha 14</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>19/09</td><td>3° vs 4°</td><td>Play In</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>26/09</td><td>Ganador Play In vs 2°</td><td>Semifinal</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            <tr><td>03/10</td><td>Ganador Semifinal vs 1°</td><td>Final</td><td>Predio Juan Carlos Irazusta</td><td>Desde 16:00 hs</td><td>Pendiente</td></tr>
+                            </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FLAG FEMENINO -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flagFemenino">
+                Flag Football Femenino - Apertura
+              </button>
+            </h2>
+
+            <div id="flagFemenino" class="accordion-collapse collapse" data-bs-parent="#accordionCalendario">
+              <div class="accordion-body">
+                <div class="calendar-header">
+                  <div>
+                    <span>Flag Football</span>
+                    <h3>Flag Femenino Apertura</h3>
+                  </div>
+                  <p><img src="../img/equipos/valkirias.PNG" alt="Valkirias"> Valkirias · <img src="../img/equipos/panteras.PNG" alt="Panteras"> Panteras · <img src="../img/equipos/zorras.PNG" alt="Zorras"> Zorras</p>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table table-cfa align-middle">
+                    <thead>
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Encuentro</th>
+                        <th>Instancia</th>
+                        <th>Sede</th>
+                        <th>Horario</th>
+                        <th>Resultado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>11/04</td><td><span class="team-fixture">Panteras</span> vs <span class="team-fixture">Valkirias</span></td><td>PRE</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>25/04</td><td><span class="team-fixture">Panteras</span> vs <span class="team-fixture">Zorras</span></td><td>Fecha 1</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>16/05</td><td><span class="team-fixture">Zorras</span> vs <span class="team-fixture">Valkirias</span></td><td>Fecha 3</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>23/05</td><td>1° vs 4° / 2° vs 3°</td><td>Semifinales</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>30/05</td><td>Final Apertura</td><td>Final</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>06/06</td><td>Torneo Clausura</td><td>Inicio Clausura</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>14/08 al 16/08</td><td>Torneo Interprovincial Córdoba</td><td>Interprovincial</td><td>A confirmar</td><td>A confirmar</td><td>Pendiente</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FLAG MASCULINO -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flagMasculino">
+                Flag Football Masculino
+              </button>
+            </h2>
+
+            <div id="flagMasculino" class="accordion-collapse collapse" data-bs-parent="#accordionCalendario">
+              <div class="accordion-body">
+                <div class="calendar-header">
+                  <div>
+                    <span>Flag Football</span>
+                    <h3>Flag Masculino</h3>
+                  </div>
+                  <p><img src="../img/equipos/cobras.PNG" alt="Cobras"> Cobras · <img src="../img/equipos/focas.PNG" alt="Focas"> Focas · <img src="../img/equipos/lobosrojos.PNG" alt="Lobos"> Lobos</p>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table table-cfa align-middle">
+                    <thead>
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Encuentro</th>
+                        <th>Instancia</th>
+                        <th>Sede</th>
+                        <th>Horario</th>
+                        <th>Resultado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>25/04</td><td><span class="team-fixture">Cobras</span> vs <span class="team-fixture">Focas</span></td><td>Fecha 1</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>02/05</td><td><span class="team-fixture">Focas</span> vs <span class="team-fixture">Lobos</span></td><td>Fecha 2</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>09/05</td><td><span class="team-fixture">Cobras</span> vs <span class="team-fixture">Lobos</span></td><td>Fecha 3</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>16/05</td><td><span class="team-fixture">Focas</span> vs <span class="team-fixture">Cobras</span></td><td>Fecha 4</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>23/05</td><td>1° vs 4° / 2° vs 3°</td><td>Semifinales</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>30/05</td><td>Final Apertura</td><td>Final</td><td>Predio Juan Carlos Irazusta</td><td>13:00 a 15:00 hs</td><td>Pendiente</td></tr>
+                      <tr><td>14/08 al 16/08</td><td>Torneo Interprovincial Córdoba</td><td>Interprovincial</td><td>A confirmar</td><td>A confirmar</td><td>Pendiente</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
