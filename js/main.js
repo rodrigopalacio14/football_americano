@@ -1,10 +1,14 @@
 const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 
+const base = window.location.hostname.includes("github.io")
+  ? "/football_americano"
+  : "";
+
 header.innerHTML = `
 <nav class="navbar navbar-expand-lg navbar-dark navbar-cfa fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="${base}/index.html">
       <span>CFA</span> Football Americano
     </a>
 
@@ -14,12 +18,12 @@ header.innerHTML = `
 
     <div class="collapse navbar-collapse" id="navbarCFA">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/pages/institucional.html">Institucional</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/equipos.html">Equipos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/calendario.html">Calendario</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/estadisticas.html">Estadísticas</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/noticias.html">Noticias</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/institucional.html">Institucional</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/equipos.html">Equipos</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/calendario.html">Calendario</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/estadisticas.html">Estadísticas</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="${base}/pages/contacto.html">Contacto</a></li>
       </ul>
     </div>
   </div>
@@ -33,8 +37,8 @@ footer.innerHTML = `
       <p>© 2026 Córdoba Football Americano. Todos los derechos reservados.</p>
 
       <div class="footer-links">
-        <a href="/pages/institucional.html">Institucional</a>
-        <a href="/pages/contacto.html">Contacto</a>
+        <a href="${base}/pages/institucional.html">Institucional</a>
+        <a href="${base}/pages/contacto.html">Contacto</a>
         <a href="https://www.instagram.com/cbafootballamericano" target="_blank">Instagram</a>
       </div>
     </div>
